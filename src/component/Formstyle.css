@@ -16,3 +16,16 @@
     font-weight: bold;
     letter-spacing: 3px;    
 }
+.col {
+    text-decoration: none;
+}
+
+.col h4{
+   font-size: 15px;
+   font-weight: 500;
+}
+
+
+.col input :placeholder-shown{
+    font-weight: bold;
+}
