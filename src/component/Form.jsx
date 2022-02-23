@@ -8,7 +8,12 @@ function Form() {
             <label>Name</label>
             <input type="text" placeholder="Your Name"/>
         </div>
-
+        <div className="row">
+            <label>Password</label>
+            <input type="text" placeholder="Your Name"/>
+        </div>
+        <input type="submit" value="submit" placeholder="Submit" />
+        
          
 
      </div>
