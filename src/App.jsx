@@ -1,14 +1,10 @@
 import React from "react";
-
+import Form from "./component/Form";
 
 function App() {
     return(
-    <form action="post">
-        <label>
-            Name:
-            <input type="submit" value="submit" />
-        </label>
-    </form>
+    <Form />
+    
 
     )
 };
