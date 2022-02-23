@@ -26,6 +26,8 @@
 }
 
 
-.col input :placeholder-shown{
-    font-weight: bold;
+input::placeholder {
+    font-size: 12px;
+    font-weight: 200;
+    letter-spacing: 2px;
 }
