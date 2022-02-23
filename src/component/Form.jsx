@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react';
 import "../component/Formstyle.css"
 
@@ -22,3 +23,28 @@ function Form(){
 };
 
 export default Form;
+=======
+import React from "react";
+
+
+function Form() {
+    return(
+     <div className="container">
+        <div className="row">
+            <label>Name</label>
+            <input type="text" placeholder="Your Name"/>
+        </div>
+        <div className="row">
+            <label>Password</label>
+            <input type="text" placeholder="Your Name"/>
+        </div>
+        <input type="submit" value="submit" placeholder="Submit" />
+        
+         
+
+     </div>
+    )
+};
+
+export default Form ;
+>>>>>>> 93b52b42c3cd0836df80e3022d45d8dfccbf7c0d
