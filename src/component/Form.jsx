@@ -1,20 +1,51 @@
 import React from 'react';
-import "../component/Formstyle.css"
+import "../component/Formstyle.css";
+import TextField from '@mui/material/TextField';
+import { Button } from '@mui/material';
+
 
 function Form(){
+
+var isLoggedIn = false; 
+
+function renderConditionally() {
+  if (isLoggedIn === true) {
+    return alert("Form submitted")
+  } else {
+    return alert("Error");
+  }
+  
+}
+
+
+// onclick 
+  // function submit() {
+  //   alert('Form submitted')
+  //   window.location.reload();
+  // }
+
+// main content
   return (
     <div className="container">
         <h1>Login Detail</h1>
         <div className="col">
-            <h4>User Name: </h4>
-            <input type="text" placeholder="User Name"/>
+        <TextField
+          required
+          id="outlined-required"
+          label="Username"
+          placeholder='User Name'
+        />
         </div>
         <div className="col">
-            <h4>Password: </h4>
-            <input type="text" placeholder="Password"/>
+        <TextField
+          required
+          id="outlined-required"
+          label="Password"
+          placeholder='Password'
+        />
         </div>
         <div className='submit'>
-        <input type="submit" value="Submit" />
+        <Button variant="contained" onClick={renderConditionally}>Submit</Button>
         </div>
         
     </div>
