@@ -6,7 +6,7 @@ import { Button } from '@mui/material';
 
 function Form(){
 
-var isLoggedIn = false; 
+var isLoggedIn = true; 
 
 function renderConditionally() {
   if (isLoggedIn === true) {
@@ -18,11 +18,11 @@ function renderConditionally() {
 }
 
 
-// onclick 
-  // function submit() {
-  //   alert('Form submitted')
-  //   window.location.reload();
-  // }
+// reload Web site
+  function submit() {
+    {renderConditionally()};
+    window.location.reload();
+  }
 
 // main content
   return (
@@ -45,7 +45,7 @@ function renderConditionally() {
         />
         </div>
         <div className='submit'>
-        <Button variant="contained" onClick={renderConditionally}>Submit</Button>
+        <Button variant="contained" onClick={submit}>Submit</Button>
         </div>
         
     </div>
