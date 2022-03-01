@@ -17,14 +17,11 @@ function renderConditionally() {
   
 }
 
-
-// reload Web site
   function submit() {
     {renderConditionally()};
     window.location.reload();
   }
 
-// main content
   return (
     <div className="container">
         <h1>Login Detail</h1>
